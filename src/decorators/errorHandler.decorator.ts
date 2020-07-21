@@ -5,7 +5,6 @@ function defaultErrorHandler(error: Error) {
 export default function Catch(handleError: Function = defaultErrorHandler) {
         return (target: object, propertyKey: string, descriptor: PropertyDescriptor) => {
             const originalMethod = descriptor.value;
-            console.log(`Binding try catch block`);
             descriptor.value = function (...args: any[]) {
                 try {
                     const result = originalMethod.apply(this, args);

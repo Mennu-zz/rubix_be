@@ -25,7 +25,7 @@ DbConnection.initConnection().then(() => {
 
 process.on('SIGINT', () => {
   DbConnection.disconnect().then(() => {
-    console.log(`DbConnection Closed`)
+    console.log(`DbConnection Closed`);
     process.exit();
   });
-})
+});

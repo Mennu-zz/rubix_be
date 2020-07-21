@@ -1,5 +1,4 @@
 import { injectable } from 'inversify';
-import { Error } from 'mongoose';
 import Trade from '../db/models/trade.db.model';
 import { ITrade, ITradeService, ITradeDto, ITradeListDto, ITradeStockQueryInput, ITradePriceDto } from '../interfaces/trade.interfaces';
 import { TradeListDto } from '../dtos/tradeList.dto';
